@@ -1,3 +1,7 @@
+mingardi_esempio:
+    resource: "@MingardiEsempioBundle/Resources/config/routing.yml"
+    prefix:   /
+
 app:
     resource: @AppBundle/Controller/
     type:     annotation

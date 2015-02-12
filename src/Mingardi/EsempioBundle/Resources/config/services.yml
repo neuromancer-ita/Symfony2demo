@@ -1,0 +1,4 @@
+services:
+#    mingardi_esempio.example:
+#        class: Mingardi\EsempioBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

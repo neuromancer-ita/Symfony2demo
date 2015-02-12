@@ -1,0 +1,3 @@
+mingardi_esempio_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: MingardiEsempioBundle:Default:index }
