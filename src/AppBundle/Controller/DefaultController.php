@@ -3,6 +3,7 @@
 namespace AppBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -54,4 +55,14 @@ class DefaultController extends Controller
     {
         return $this->render('default/format.'.$_format.'.twig');
     }
+
+    /**
+     * @Route("/app/engine", name="engine")
+     * @Template(engine="php")
+     */
+    public function engineAction()
+    {
+        return array("lingua"=>"italiano");
+    }
+
 }
